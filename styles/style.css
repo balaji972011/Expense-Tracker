@@ -10,9 +10,11 @@
 }
 
 :root {
-  --grey-bg: #e5e5e5;
-  --blck-bg: #000000;
-  --grey-txt: #646464;
+  --grey-bg: #887f81;
+  --drk-grey-bg: #3d3f41;
+  --grey-clr: rgba(136, 127, 129, 0.3);
+  --blck-clr: #17191d;
+  --silver-txt: #f2f2f7;
   --white-txt: #fdfdfd;
   --max-width: 1140px;
 }
@@ -24,7 +26,15 @@ html {
 
 body {
   font-family: "Source Sans Pro", sans-serif;
-  background-color: ;
+  background: linear-gradient(
+    135deg,
+    var(--grey-bg) 10%,
+    var(--drk-grey-bg) 80%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 a {

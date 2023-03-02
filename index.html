@@ -17,6 +17,46 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="main-container">
+      <div class="total-balance">
+        <h3>TOTAL BALANCE</h3>
+        <p>$23000</p>
+      </div>
+      <div class="summary">
+        <div class="total-income">
+          <h3>TOTAL INCOME</h3>
+          <p>$23000</p>
+        </div>
+        <div class="total-expense">
+          <h3>TOTAL EXPENSE</h3>
+          <p>-$23000</p>
+        </div>
+      </div>
+      <div class="transaction-entry">
+        <h2>Recent Transaction</h2>
+        <ul class="recent-transaction">
+          <li>pizza 30</li>
+          <li>coke 40</li>
+          <li>bicycle 30</li>
+        </ul>
+      </div>
+      <form action="#" id="form">
+        <div class="form-control">
+          <label for="transaction"> Transaction </label>
+          <input type="text" id="transaction" placeholder="Enter Description" />
+        </div>
+        <div class="form-control">
+          <label for="amount">
+            Amount ( '-'negative - expense | '+'positive - income )</label
+          >
+          <input type="number" id="amount" placeholder="Enter Amount" />
+        </div>
+        <button class="btn" type="submit">Calculate</button>
+      </form>
+    </div>
+  </body>
 </html>
