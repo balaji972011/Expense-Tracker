@@ -106,7 +106,7 @@ img {
   width: 21rem;
 }
 
-.list {
+li {
   background: linear-gradient(
     135deg,
     var(--grey-bg) 10%,
@@ -143,11 +143,11 @@ img {
   opacity: 100%;
 }
 
-.list.plus {
+.plus {
   border-right: 8px solid var(--green-clr);
 }
 
-.list.minus {
+.minus {
   border-right: 8px solid var(--red-clr);
 }
 
