@@ -16,6 +16,8 @@
   --blck-clr: #17191d;
   --silver-txt: #f2f2f7;
   --white-txt: #fdfdfd;
+  --red-clr: rgba(255, 0, 0, 0.6);
+  --green-clr: rgba(0, 128, 0, 0.6);
   --max-width: 1140px;
 }
 
@@ -117,6 +119,36 @@ img {
   color: var(--silver-txt);
   font-size: 18px;
   font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.delete-btn {
+  width: 2.8rem;
+  height: 2.8rem;
+  cursor: pointer;
+  background-color: var(--red-clr);
+  border: none;
+  color: var(--silver-txt);
+  font-size: 28px;
+  font-weight: 400;
+  transform: translate(-140%, 0);
+  opacity: 1%;
+  position: absolute;
+}
+
+.delete-btn:hover {
+  opacity: 100%;
+}
+
+.list.plus {
+  border-right: 8px solid var(--green-clr);
+}
+
+.list.minus {
+  border-right: 8px solid var(--red-clr);
 }
 
 form {
